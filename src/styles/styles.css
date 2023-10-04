@@ -1,3 +1,12 @@
+:root {
+    /* CSS HEX */
+    --eerie-black: #181a1bff;
+    --white-smoke: #f5f5f5ff;
+    --mint: #00bd9dff;
+    --dim-gray: #797270ff;
+    --pumpkin: #fc7a1eff;
+}
+
 /* Document wide */
 @font-face {
     font-family: Ubuntu;
@@ -10,7 +19,7 @@ html {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: var(--mint);
 }
 
 .logo {
