@@ -1,0 +1,21 @@
+/* Header section */
+nav {
+    border: 2px solid red;
+    width: auto;
+}
+
+ul {
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    /*justify-content: left;*/
+}
+
+li {
+    padding: 0.4em;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
