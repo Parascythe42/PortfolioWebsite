@@ -13,7 +13,8 @@ a {
     color: blue;
 }
 
-#logo {
+.logo {
+    min-width: 21px;
     width: 35px;
 }
 
