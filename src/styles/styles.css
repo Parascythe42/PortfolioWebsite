@@ -40,3 +40,20 @@ ul {
 li {
     padding: 0.4em;
 }
+
+
+/* Main Section */
+#hero-section {
+    background-image: url(../images/Full-Moon-Behind-Mountains.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 400px;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+}
