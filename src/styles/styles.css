@@ -1,3 +1,13 @@
+/* Document wide */
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/Ubuntu")
+}
+
+html {
+    font-family: Ubuntu, sans-serif;
+}
+
 /* Header section */
 nav {
     border: 2px solid red;
