@@ -13,6 +13,10 @@ a {
     color: blue;
 }
 
+#logo {
+    width: 35px;
+}
+
 /* Header section */
 nav {
     border: 2px solid red;
