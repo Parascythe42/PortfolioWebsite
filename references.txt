@@ -1,3 +1,8 @@
+src/images/Full-Moon-Behind-Mountains.jpg
+
+Photo by eberhard grossgasteiger: https://www.pexels.com/photo/full-moon-behind-mountains-1183021/
+
+
 src/images/logos/github-mark/github-mark/github-mark.svg
 src/images/logos/github-mark/github-mark/github-mark-white.svg
 
