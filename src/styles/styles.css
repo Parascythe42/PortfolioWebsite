@@ -88,3 +88,10 @@ main {
     justify-content: center;
     padding: 2em 6em;
 }
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 2em;
+}
