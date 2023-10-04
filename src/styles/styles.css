@@ -17,13 +17,19 @@ a {
 nav {
     border: 2px solid red;
     width: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
     padding-left: 0;
     display: flex;
     list-style-type: none;
-    /*justify-content: left;*/
+    border: 2px solid green;
+}
+
+#nav-right {
+    justify-content: right;
 }
 
 li {
