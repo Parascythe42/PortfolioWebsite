@@ -7,6 +7,10 @@
     --mint: #00bd9dff;
     --dim-gray: #797270ff;
     --pumpkin: #fc7a1eff;
+
+    /* Logo variables */
+    --logo-min-width: 21px;
+    --logo-width: 2em;
 }
 
 
@@ -19,6 +23,12 @@
     h1 h2 h3 h4 h5 h6 p {
         color: var(--white-smoke) !important;
         -webkit-text-fill-color: var(--white-smoke) !important;
+    }
+
+    .linkedin {
+        filter: brightness(0) saturate(100%);
+        min-width: var(--logo-min-width);
+        width: var(--logo-width);
     }
 }
 
@@ -39,8 +49,8 @@ a {
 }
 
 .logo {
-    min-width: 21px;
-    width: 35px;
+    min-width: var(--logo-min-width);
+    width: var(--logo-width);
 }
 
 /* Header section */
@@ -65,10 +75,6 @@ ul {
 
 li {
     padding: 0.4em;
-}
-
-.linkedin-dark-bug {
-    filter: invert(0%) sepia(90%) saturate(0%) hue-rotate(296deg) brightness(101%) contrast(101%);
 }
 
 
