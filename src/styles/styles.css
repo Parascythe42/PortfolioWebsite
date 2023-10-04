@@ -1,5 +1,5 @@
 :root {
-    color-scheme:light dark;
+    color-scheme: light dark;
 
     /* CSS HEX */
     --eerie-black: #181a1bff;
@@ -49,6 +49,7 @@ nav {
     width: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 4em;
 }
 
 ul {
@@ -85,4 +86,5 @@ li {
 main {
     text-align: center;
     justify-content: center;
+    padding: 2em 6em;
 }
