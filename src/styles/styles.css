@@ -63,6 +63,10 @@ li {
     padding: 0.4em;
 }
 
+.linkedin-dark-bug {
+    filter: invert(0%) sepia(90%) saturate(0%) hue-rotate(296deg) brightness(101%) contrast(101%);
+}
+
 
 /* Main Section */
 #hero-section {

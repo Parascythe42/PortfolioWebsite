@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="color-scheme" content="light dark">
     <title>My Website</title>
 </head>
 <body>
@@ -20,11 +21,33 @@
         <ul id="nav-right">
 <!--             GitHub Logo, https://github.com/logos -->
             <li><a href="https://github.com/Matthew-Fox-NSCC">
-                <img class="logo" src="images/logos/github-mark/github-mark/github-mark.svg" alt="The GitHub Invertocat logo">
+                
+                <picture>
+<!--                     Light mode version -->
+                    <source media="light" srcset="images/logos/github-mark/github-mark/github-mark.svg">
+                    
+<!--                     Dark mode version -->
+                    <source media="dark" srcset="images/logos/github-mark/github-mark/github-mark-white.svg">
+                    
+<!--                     Fallback image -->
+                    <img class="logo" src="images/logos/github-mark/github-mark/github-mark.svg" alt="The GitHub Invertocat logo">
+                </picture>
+                
             </a></li>
 <!--            LinkedIn Logo, https://brand.linkedin.com/downloads -->
             <li><a href="https://www.linkedin.com/in/matthew-kenneth-fox/">
-                <img class="logo" src="images/logos/LinkedIn-Logos/LI-In-Bug.png" alt="The LinkedIn Bug logo">
+                
+                <picture>
+<!--                     Light mode version -->
+                    <source media="light" srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                    
+<!--                     Dark mode version -->
+                    <source class="linkedin-dark-bug" media="dark" srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                    
+<!--                     Fallback image -->
+                    <img class="logo" src="images/logos/LinkedIn-Logos/LI-In-Bug.png" alt="The LinkedIn Bug logo">
+                </picture>
+                
             </a></li>
         </ul>
     </nav>
