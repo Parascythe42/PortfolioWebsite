@@ -210,6 +210,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+
 # Extra PyCharm things
 .idea/misc.xml
 .idea/profiles_settings.xml
@@ -226,6 +227,11 @@ fabric.properties
 # Datasource local storage ignored files
 .idea/dataSources/
 .idea/dataSources.local.xml
+
+
+# Extra Webstorm things
+.idea/watcherTasks.xml
+.idea
 
 
 #VSCode
