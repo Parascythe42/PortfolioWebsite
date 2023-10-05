@@ -42,6 +42,10 @@ a {
     color: var(--mint);
 }
 
+a:hover {
+    filter: brightness(80%)
+}
+
 .logo {
     min-width: 21px;
     width: 2em;
