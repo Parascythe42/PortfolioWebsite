@@ -7,10 +7,6 @@
     --mint: #00bd9dff;
     --dim-gray: #797270ff;
     --pumpkin: #fc7a1eff;
-
-    /* Logo variables */
-    --logo-min-width: 21px;
-    --logo-width: 2em;
 }
 
 
@@ -27,8 +23,6 @@
 
     .linkedin {
         filter: brightness(0) saturate(100%);
-        min-width: var(--logo-min-width);
-        width: var(--logo-width);
     }
 }
 
@@ -49,8 +43,8 @@ a {
 }
 
 .logo {
-    min-width: var(--logo-min-width);
-    width: var(--logo-width);
+    min-width: 21px;
+    width: 2em;
 }
 
 /* Header section */
