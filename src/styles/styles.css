@@ -41,8 +41,12 @@ html {
     font-family: Ubuntu, sans-serif;
 }
 
+.main-containers {
+    justify-content: center;
+}
+
 h2 {
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 a {
@@ -56,8 +60,9 @@ a:hover {
 
 .logo {
     min-width: 21px;
-    width: 2em;
+    width: 2rem;
 }
+
 
 /* Header section */
 nav {
@@ -65,7 +70,7 @@ nav {
     width: auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 4em;
+    padding: 0 4rem;
 }
 
 ul {
@@ -80,7 +85,7 @@ ul {
 }
 
 li {
-    padding: 0.4em;
+    padding: 0.4rem;
 }
 
 
@@ -98,7 +103,17 @@ li {
 main {
     text-align: center;
     justify-content: center;
-    padding: 0 6em;
+    padding: 0 6rem;
+}
+
+/* Grids */
+.equal-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 
