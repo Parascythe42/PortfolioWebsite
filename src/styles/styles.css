@@ -7,6 +7,8 @@
     --mint: #00bd9dff;
     --dim-gray: #797270ff;
     --pumpkin: #fc7a1eff;
+
+    --hero-picture-height: 400px;
 }
 
 
@@ -96,7 +98,11 @@ li {
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    height: 400px;
+    height: var(--hero-picture-height);
+}
+
+#title {
+    padding-top: calc(var(--hero-picture-height) * 0.3)
 }
 
 main {
