@@ -122,6 +122,10 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid-cell {
+    padding: 1rem;
+}
+
 
 /* Footer Section */
 footer {
