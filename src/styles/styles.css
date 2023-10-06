@@ -36,6 +36,9 @@
 html {
     font-family: Ubuntu, sans-serif;
 }
+body {
+    background-color: var(--white-smoke);
+}
 
 .main-containers {
     justify-content: center;
@@ -51,7 +54,7 @@ a {
 }
 
 a:hover {
-    filter: brightness(80%)
+    filter: brightness(120%)
 }
 
 .logo {
@@ -62,7 +65,7 @@ a:hover {
 
 /* Header section */
 nav {
-
+    background-color: var(--dim-gray);
     width: auto;
     display: flex;
     justify-content: space-between;
@@ -117,4 +120,5 @@ main {
 footer {
     text-align: center;
     padding: 2em;
+    background-color: var(--dim-gray);
 }
