@@ -120,5 +120,6 @@ main {
 footer {
     text-align: center;
     padding: 2em;
+    margin-top: 2em;
     background-color: var(--dim-gray);
 }
