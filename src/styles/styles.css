@@ -46,7 +46,7 @@ body {
 
 .main-containers {
     justify-content: center;
-    border: 1px solid var(--white-smoke);
+    border-top: 1px solid var(--white-smoke);
 }
 
 h2 {
