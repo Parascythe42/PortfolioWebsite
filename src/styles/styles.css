@@ -103,7 +103,7 @@ nav {
 #hero-section {
     background-image: url(../images/Full-Moon-Behind-Mountains.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -6rem;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -155,14 +155,29 @@ footer {
 
 
 /* Mobile / Desktop */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     body {
         width: auto;
     }
 
     nav {
         padding: 0;
-        text-wrap: normal;
         justify-content: left;
+    }
+
+    /* Grids */
+    .equal-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hero-section {
+        background-size: cover;
+        height: calc(var(--hero-picture-height));
+        background-position: center -15rem;
     }
 }
