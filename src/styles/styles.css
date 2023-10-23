@@ -139,11 +139,25 @@ main {
 
 .skill-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*grid-auto-rows: minmax(100px, auto);*/
+    /*grid-template-areas:*/
+    /*    "hd   hd   hd   hd"*/
+    /*    "main main main main";*/
 }
 
 .grid-cell {
     padding: 1rem;
 }
+
+/*.grid-header {*/
+/*    grid-area: hd;*/
+/*}*/
+
+/*.grid-content {*/
+/*    grid-area: main;*/
+/*}*/
+
 
 
 /* Footer Section */
