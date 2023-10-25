@@ -143,12 +143,13 @@ main {
 }
 
 
+
 /*
 Inspired by Mozilla developer.
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas
 */
-
-#skill-grid {
+/*Desktop Version*/
+#skill-grid-desktop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(40px, auto);
@@ -162,7 +163,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     background-color: lightblue;
 }
 
-.skill-grid-cell {
+.skill-grid-cell-desktop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -184,6 +185,64 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     grid-area: m3;
 }
 
+/*Mobile Version*/
+#skill-grid-mobile {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:
+    "hd1 hd1"
+    "m11 m11"
+    "m12 m12"
+    "m13 m13"
+    "hd2 hd2"
+    "m21 m21"
+    "m22 m22"
+    "m23 m23";
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+
+.skill-grid-cell-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mobile-grid-header1 {
+    grid-area: hd1;
+    padding-bottom: 0.6rem;
+}
+
+.mobile-grid-header2 {
+    grid-area: hd2;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.mobile-grid-content11 {
+    grid-area: m11;
+}
+
+.mobile-grid-content12 {
+    grid-area: m12;
+}
+
+.mobile-grid-content13 {
+    grid-area: m13;
+}
+
+.mobile-grid-content21 {
+    grid-area: m21;
+}
+
+.mobile-grid-content22 {
+    grid-area: m22;
+}
+
+.mobile-grid-content23 {
+    grid-area: m23;
+}
 
 
 
@@ -225,4 +284,11 @@ footer {
 }
 
 @media only screen and (max-width: 680px) {
+    #skill-grid-desktop {
+        display: none;
+    }
+
+    #skill-grid-mobile {
+        display: grid;
+    }
 }
