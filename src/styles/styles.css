@@ -103,11 +103,12 @@ nav {
 
 /* Main Section */
 #hero-section {
-    background-image: url(../images/Full-Moon-Behind-Mountains.jpg);
+    background-image: url(../images/Full-Moon-Behind-Mountains-5000x3333.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 70px;
+    margin-top: -70px;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     text-align: center;
     height: var(--hero-picture-height);
 }
@@ -278,6 +279,6 @@ footer {
     #hero-section {
         background-size: cover;
         height: calc(var(--hero-picture-height));
-        background-position: center -15rem;
+        /*background-position: center -15rem;*/
     }
 }
