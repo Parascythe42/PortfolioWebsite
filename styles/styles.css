@@ -261,6 +261,13 @@ footer {
         justify-content: left;
     }
 
+    .main-containers {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+        height: auto;
+    }
+
     /* Grids */
     .equal-column-grid {
         display: grid;
