@@ -158,9 +158,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     "m1 m1 m1 m1"
     "m2 m2 m2 m2"
     "m3 m3 m3 m3";
-    border: 2px solid blue;
-    border-radius: 5px;
-    background-color: lightblue;
 }
 
 .skill-grid-cell-desktop {
@@ -199,9 +196,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     "m21 m21"
     "m22 m22"
     "m23 m23";
-    border: 2px solid green;
-    border-radius: 5px;
-    background-color: lightgreen;
 }
 
 .skill-grid-cell-mobile {
