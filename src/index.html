@@ -115,11 +115,67 @@
         
         <!--         Copied code from Mozilla developer to better understand CSS Grid template areas and to modify it to fit my use case.
                      https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas-->
-        <div class="wrapper">
-            <div class="header">Header</div>
-            <div class="sidebar">Sidebar</div>
-            <div class="content">Content</div>
-            <div class="footer">Footer</div>
+        <div class="wrapper desktop-grid">
+            <div class="desktop-grid-header temp-cell">
+                <div><h3>Languages</h3></div>
+                <div><h3>Technologies</h3></div>
+                <div><h3>Frameworks</h3></div>
+                <div><h3>Software</h3></div>
+            </div>
+            <div class="desktop-grid-content temp-cell">
+                <div><p>Python</p></div>
+                <div><p>GitHub</p></div>
+                <div><p>TensorFlow</p></div>
+                <div><p>Windows/Linux</p></div>
+            </div>
+            <div class="desktop-grid-sidebar temp-cell">
+                <div><p>Java</p></div>
+                <div><p>Docker</p></div>
+                <div><p>PyTorch</p></div>
+                <div><p>Intellij</p></div>
+            </div>
+            <div class="desktop-grid-footer temp-cell">
+                <div><p>C#</p></div>
+                <div><p>PostgreSQL</p></div>
+                <div><p>Angular</p></div>
+                <div><p>VS Code</p></div>
+            </div>
+        </div>
+        
+        <div class="wrapper mobile-grid">
+            <div class="mobile-grid-header1 temp-cell">
+                <div><h3>Languages</h3></div>
+                <div><h3>Technologies</h3></div>
+            </div>
+            <div class="mobile-grid-content1 temp-cell">
+                <div><p>Python</p></div>
+                <div><p>GitHub</p></div>
+            </div>
+            <div class="mobile-grid-sidebar1 temp-cell">
+                <div><p>Java</p></div>
+                <div><p>Docker</p></div>
+            </div>
+            <div class="mobile-grid-footer1 temp-cell">
+                <div><p>C#</p></div>
+                <div><p>PostgreSQL</p></div>
+            </div>
+            
+            <div class="desktop-grid-header2 temp-cell">
+                <div><h3>Frameworks</h3></div>
+                <div><h3>Software</h3></div>
+            </div>
+            <div class="desktop-grid-content2 temp-cell">
+                <div><p>TensorFlow</p></div>
+                <div><p>Windows/Linux</p></div>
+            </div>
+            <div class="desktop-grid-sidebar2 temp-cell">
+                <div><p>PyTorch</p></div>
+                <div><p>Intellij</p></div>
+            </div>
+            <div class="desktop-grid-footer2 temp-cell">
+                <div><p>Angular</p></div>
+                <div><p>VS Code</p></div>
+            </div>
         </div>
     
     </div>

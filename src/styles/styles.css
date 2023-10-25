@@ -164,45 +164,90 @@ main {
 Copied code from Mozilla developer to better understand CSS Grid template areas and to modify it to fit my use case.
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas
 */
-.box1 {
-    grid-area: 1 / 1 / 4 / 2;
-}
-
-.header {
+.desktop-grid-header {
     grid-area: hd;
 }
 
-.footer {
+.desktop-grid-footer {
     grid-area: ft;
 }
 
-.content {
+.desktop-grid-content {
     grid-area: main;
 }
 
-.sidebar {
+.desktop-grid-sidebar {
     grid-area: sd;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-    "hd hd hd hd   hd   hd   hd   hd   hd"
-    "sd sd sd main main main main main main"
-    "ft ft ft ft   ft   ft   ft   ft   ft";
+.mobile-grid-header1 {
+    grid-area: hd1;
 }
 
-* {
-    box-sizing: border-box;
+.mobile-grid-footer1 {
+    grid-area: ft1;
+}
+
+.mobile-grid-content1 {
+    grid-area: main1;
+}
+
+.mobile-grid-sidebar1 {
+    grid-area: sd1;
+}
+
+.mobile-grid-header2 {
+    grid-area: hd2;
+}
+
+.mobile-grid-footer2 {
+    grid-area: ft2;
+}
+
+.mobile-grid-content2 {
+    grid-area: main2;
+}
+
+.mobile-grid-sidebar2 {
+    grid-area: sd2;
+}
+
+.temp-cell {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.desktop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(0, auto);
+    grid-template-areas:
+    "hd   hd   hd   hd"
+    "main main main main"
+    "sd   sd   sd   sd"
+    "ft   ft   ft   ft";
+}
+
+.mobile-grid {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(0, auto);
+    grid-template-areas:
+    "hd1   hd1"
+    "main1 main1"
+    "sd1   sd1"
+    "ft1   ft1"
+    "hd2   hd2"
+    "main2 main2"
+    "sd2   sd2"
+    "ft2   ft2";
 }
 
 .wrapper {
     border: 2px solid #f76707;
     border-radius: 5px;
     background-color: #fff4e6;
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -210,8 +255,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     border: 2px solid #ffa94d;
     border-radius: 5px;
     background-color: #ffd8a8;
-    padding: 1em;
+    /*padding: 1em;*/
     color: #d9480f;
+}
+
+.wrapper > div > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    /*padding: 1em;*/
+    color: #d9480f;
+    margin: 0;
+    height: auto;
 }
 
 
@@ -251,5 +306,15 @@ footer {
         background-size: cover;
         height: calc(var(--hero-picture-height));
         background-position: center -15rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .desktop-grid {
+        display: none;
+    }
+
+    .mobile-grid {
+        display: grid;
     }
 }
