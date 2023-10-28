@@ -156,16 +156,20 @@ header {
 #hero-section {
     background-image: url(../images/Full-Moon-Behind-Mountains-5000x3333.jpg);
     background-repeat: no-repeat;
-    background-position: center 70px;
-    margin-top: -70px;
+    background-position: center 20%;
+    /*margin-top: 20px;*/
     background-size: cover;
     /*background-attachment: fixed;*/
+    /*margin-top: 20vw;*/
     text-align: center;
+    overflow: hidden;
     height: var(--hero-picture-height);
 }
 
 #title {
-    padding-top: calc(var(--hero-picture-height) * 0.3)
+    /*padding-top: calc(var(--hero-picture-height) * 0.3);*/
+    padding-top: 8%;
+    margin: 0;
 }
 
 main {
@@ -317,6 +321,10 @@ footer {
         padding-right: 1rem;
         padding-bottom: 2rem;
         height: auto;
+    }
+
+    #title {
+        padding-top: 12%;
     }
 
     /* Grids */
