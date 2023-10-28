@@ -157,17 +157,13 @@ header {
     background-image: url(../images/Full-Moon-Behind-Mountains-5000x3333.jpg);
     background-repeat: no-repeat;
     background-position: center 20%;
-    /*margin-top: 20px;*/
     background-size: cover;
-    /*background-attachment: fixed;*/
-    /*margin-top: 20vw;*/
     text-align: center;
     overflow: hidden;
     height: var(--hero-picture-height);
 }
 
 #title {
-    /*padding-top: calc(var(--hero-picture-height) * 0.3);*/
     padding-top: 8%;
     margin: 0;
 }
