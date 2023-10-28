@@ -77,27 +77,51 @@ header {
     width: auto;
 }
 
-nav {
+.header_links {
+    padding: 0.4rem;
+}
+
+#nav-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "nav1 nav2";
     background-color: var(--platinum);
     width: auto;
-    display: flex;
-    justify-content: space-between;
-    /*padding: 0 4rem;*/
     border-bottom: 0.5rem solid var(--pumpkin);
 }
 
-.header_container {
-    padding-top: 1rem;
-    display: flex;
-    list-style-type: none;
+#nav-left {
+    grid-area: nav1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
 }
 
 #nav-right {
-    justify-content: right;
+    grid-area: nav2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "p p p p g l";
+    align-items: center;
 }
 
-.header_links {
-    padding: 0.4rem;
+.padding-container {
+    grid-area: p;
+}
+
+#github-container {
+    grid-area: g;
+}
+
+#linkedin-container {
+    grid-area: l;
+}
+
+#github-container, #linkedin-container {
+    display: flex;
+    justify-content: right;
 }
 
 

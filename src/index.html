@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="styles/styles.css" rel="stylesheet">
+    <meta content="light dark" name="color-scheme">
+    <title>My Website</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="header_container" id="nav-left">
+            <a class="header_links" href="index.html">Home</a>
+            <a class="header_links" href="#">About</a>
+            <a class="header_links" href="#">Projects</a>
+            <a class="header_links" href="#">Feature</a>
+            <a class="header_links" href="#">Resume</a>
+        </div>
+        
+        <div class="header_container" id="nav-right">
+            <!--             GitHub Logo, https://github.com/logos -->
+            <a class="header_links" href="https://github.com/Matthew-Fox-NSCC">
+                
+                <picture>
+                    <!--                     Dark mode version -->
+                    <source media="(prefers-color-scheme: dark)"
+                            srcset="images/logos/github-mark/github-mark/github-mark-white.svg">
+                    
+                    <!--                     Light mode version -->
+                    <source media="(prefers-color-scheme: light)"
+                            srcset="images/logos/github-mark/github-mark/github-mark.svg">
+                    
+                    <!--                     Fallback image -->
+                    <img alt="The GitHub Invertocat logo" class="logo"
+                         src="images/logos/github-mark/github-mark/github-mark.svg">
+                </picture>
+            
+            </a>
+            <!--            LinkedIn Logo, https://brand.linkedin.com/downloads -->
+            <a class="header_links" href="https://www.linkedin.com/in/matthew-kenneth-fox/">
+                
+                <picture>
+                    <!--                     Dark mode version -->
+                    <source media="(prefers-color-scheme: dark)" srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                    
+                    <!--                     Light mode version -->
+                    <source media="(prefers-color-scheme: light)"
+                            srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                    
+                    <!--                     Fallback image -->
+                    <img alt="The LinkedIn Bug logo" class="logo linkedin"
+                         src="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                </picture>
+            
+            </a>
+        </div>
+    </nav>
+</header>
+
+<div id="hero-section">
+    <button id="contact-button">Contact Me</button>
+    <h1 id="title">Matthew Fox</h1>
+</div>
+
+<main>
+    
+    <div class="main-containers" id="introduction">
+        <h2>I'm Matthew Fox</h2>
+        <p>I'm a software developer, tea drinker, and AI enthusiast. I recently graduated from NSCC and I hope to work
+           with quantum computers in the future. Feel free to check out my
+            <a href="https://github.com/Matthew-Fox-NSCC">GitHub</a>, and if you want to connect, contact me at
+            <a href="mailto:matthewfox2000@gmail.com">matthewfox2000@gmail.com</a></p>
+    </div>
+    
+    <div class="main-containers alternate-container" id="projects">
+        <h2>Projects</h2>
+        
+        <div class="equal-column-grid">
+            <div class="grid-cell">This website</div>
+            <div class="grid-cell">Learning TensorFlow</div>
+            <div class="grid-cell">Personal Unraid Server</div>
+            
+            <div class="grid-cell">NSCC Database Project</div>
+            <div class="grid-cell">Row 2, Column 2</div>
+            <div class="grid-cell">Row 2, Column 3</div>
+        </div>
+    </div>
+    
+    <div class="main-containers" id="skills">
+        <h2>Skills</h2>
+        
+        <div class="equal-column-grid skill-grid">
+            <div class="grid-cell"><h3>Languages</h3></div>
+            <div class="grid-cell"><h3>Technologies</h3></div>
+            <div class="grid-cell"><h3>Frameworks</h3></div>
+            <div class="grid-cell"><h3>Software</h3></div>
+            
+            <div class="grid-cell">Python</div>
+            <div class="grid-cell">GitHub</div>
+            <div class="grid-cell">TensorFlow</div>
+            <div class="grid-cell">Windows/Linux</div>
+            
+            <div class="grid-cell">Java</div>
+            <div class="grid-cell">Docker</div>
+            <div class="grid-cell">PyTorch</div>
+            <div class="grid-cell">Intellij</div>
+            
+            <div class="grid-cell">C#</div>
+            <div class="grid-cell">PostgreSQL</div>
+            <div class="grid-cell">Angular</div>
+            <div class="grid-cell">VS Code</div>
+        </div>
+    </div>
+    
+    <div class="main-containers alternate-container" id="experience">
+        <h2>Experience</h2>
+        
+        <div class="equal-column-grid">
+            <div class="grid-cell">NSCC Work Term</div>
+            <div class="grid-cell">NSCC Co-Op</div>
+            <div class="grid-cell">Other Co-Op</div>
+        </div>
+    </div>
+    
+    <div class="main-containers" id="education">
+        <h2>Education</h2>
+        
+        <div class="equal-column-grid">
+            <div class="grid-cell">Classes at Dalhousie</div>
+            <div class="grid-cell">NSCC Diploma for IT Programming</div>
+            <div class="grid-cell">Other Certificate</div>
+        </div>
+    </div>
+    
+    <!--     <div id="callout" class="main-containers alternate-container"></div> -->
+
+</main>
+
+<footer>
+    <p>&copy; Matthew Fox 2023</p>
+</footer>
+
+</body>
+</html>
