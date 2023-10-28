@@ -95,8 +95,31 @@ header {
     grid-area: nav1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+    grid-template-areas:
+    "navl1 navl2 navl3 navl4 navl5";
+    text-align: center;
 }
+
+#nav-link-1 {
+    grid-area: navl1;
+}
+
+#nav-link-2 {
+    grid-area: navl2;
+}
+
+#nav-link-3 {
+    grid-area: navl3;
+}
+
+#nav-link-4 {
+    grid-area: navl4;
+}
+
+#nav-link-5 {
+    grid-area: navl5;
+}
+
 
 #nav-right {
     grid-area: nav2;
