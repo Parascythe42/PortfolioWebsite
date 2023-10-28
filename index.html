@@ -10,57 +10,106 @@
 <body>
 
 <header>
-    <nav>
-        <div class="header_container" id="nav-left">
-            <a class="header_links" href="index.html">Home</a>
-            <a class="header_links" href="#">About</a>
-            <a class="header_links" href="#">Projects</a>
-            <a class="header_links" href="#">Feature</a>
-            <a class="header_links" href="#">Resume</a>
+    <div id="nav-container">
+        <div id="nav-left">
+            <div class="grid-cell nav-link-1"><a class="header_links" href="index.html">Home</a></div>
+            <div class="grid-cell nav-link-2"><a class="header_links" href="#">About</a></div>
+            <div class="grid-cell nav-link-3"><a class="header_links" href="#">Projects</a></div>
+            <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
+            <div class="grid-cell nav-link-5"><a class="header_links" href="#">Resume</a></div>
+            <div class="padding-container"></div>
         </div>
+        <div id="nav-right">
+            <div class="padding-container"></div>
+            <div class="github-container">
+                <!--             GitHub Logo, https://github.com/logos -->
+                <a class="header_links" href="https://github.com/Matthew-Fox-NSCC">
+                    
+                    <picture>
+                        <!-- Dark mode version -->
+                        <source media="(prefers-color-scheme: dark)"
+                                srcset="images/logos/github-mark/github-mark/github-mark-white.svg">
+                        
+                        <!-- Light mode version -->
+                        <source media="(prefers-color-scheme: light)"
+                                srcset="images/logos/github-mark/github-mark/github-mark.svg">
+                        
+                        <!-- Fallback image -->
+                        <img alt="The GitHub Invertocat logo" class="logo"
+                             src="images/logos/github-mark/github-mark/github-mark.svg">
+                    </picture>
+                
+                </a>
+            </div>
+            <div class="linkedin-container">
+                <!--            LinkedIn Logo, https://brand.linkedin.com/downloads -->
+                <a class="header_links" href="https://www.linkedin.com/in/matthew-kenneth-fox/">
+                    
+                    <picture>
+                        <!-- Dark mode version -->
+                        <source media="(prefers-color-scheme: dark)" srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                        
+                        <!-- Light mode version -->
+                        <source media="(prefers-color-scheme: light)"
+                                srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                        
+                        <!-- Fallback image -->
+                        <img alt="The LinkedIn Bug logo" class="logo linkedin"
+                             src="images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="nav-mobile">
+        <div class="grid-cell nav-link-1"><a class="header_links" href="index.html">Home</a></div>
+        <div class="grid-cell nav-link-2"><a class="header_links" href="#">About</a></div>
+        <div class="grid-cell nav-link-3"><a class="header_links" href="#">Projects</a></div>
+        <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
+        <div class="grid-cell nav-link-5"><a class="header_links" href="#">Resume</a></div>
         
-        <div class="header_container" id="nav-right">
+        <div id="nav-logo">
             <!--             GitHub Logo, https://github.com/logos -->
             <a class="header_links" href="https://github.com/Matthew-Fox-NSCC">
                 
                 <picture>
-                    <!--                     Dark mode version -->
+                    <!-- Dark mode version -->
                     <source media="(prefers-color-scheme: dark)"
                             srcset="images/logos/github-mark/github-mark/github-mark-white.svg">
                     
-                    <!--                     Light mode version -->
+                    <!-- Light mode version -->
                     <source media="(prefers-color-scheme: light)"
                             srcset="images/logos/github-mark/github-mark/github-mark.svg">
                     
-                    <!--                     Fallback image -->
+                    <!-- Fallback image -->
                     <img alt="The GitHub Invertocat logo" class="logo"
                          src="images/logos/github-mark/github-mark/github-mark.svg">
                 </picture>
-            
             </a>
+            
             <!--            LinkedIn Logo, https://brand.linkedin.com/downloads -->
             <a class="header_links" href="https://www.linkedin.com/in/matthew-kenneth-fox/">
                 
                 <picture>
-                    <!--                     Dark mode version -->
+                    <!-- Dark mode version -->
                     <source media="(prefers-color-scheme: dark)" srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
                     
-                    <!--                     Light mode version -->
+                    <!-- Light mode version -->
                     <source media="(prefers-color-scheme: light)"
                             srcset="images/logos/LinkedIn-Logos/LI-In-Bug.png">
                     
-                    <!--                     Fallback image -->
+                    <!-- Fallback image -->
                     <img alt="The LinkedIn Bug logo" class="logo linkedin"
                          src="images/logos/LinkedIn-Logos/LI-In-Bug.png">
                 </picture>
-            
             </a>
         </div>
-    </nav>
+    </div>
 </header>
 
 <div id="hero-section">
-    <button id="contact-button">Contact Me</button>
+    <!--     <button id="contact-button">Contact Me</button> -->
     <h1 id="title">Matthew Fox</h1>
 </div>
 
@@ -91,9 +140,9 @@
     <div class="main-containers" id="skills">
         <h2>Skills</h2>
         
-        <!--         Inspired by Mozilla developer.
-                     https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas-->
-        <div id="skill-grid-desktop" class="grid-wrapper">
+        <!-- Inspired by Mozilla developer.
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas -->
+        <div class="grid-wrapper" id="skill-grid-desktop">
             <div class="desktop-grid-header skill-grid-cell-desktop">
                 <div><h3>Languages</h3></div>
                 <div><h3>Technologies</h3></div>
@@ -120,7 +169,7 @@
             </div>
         </div>
         
-        <div id="skill-grid-mobile" class="grid-wrapper">
+        <div class="grid-wrapper" id="skill-grid-mobile">
             <div class="mobile-grid-header1 skill-grid-cell-mobile">
                 <div><h3>Languages</h3></div>
                 <div><h3>Technologies</h3></div>
@@ -178,7 +227,7 @@
         </div>
     </div>
     
-    <!--     <div id="callout" class="main-containers alternate-container"></div> -->
+    <!-- <div id="callout" class="main-containers alternate-container"></div> -->
 
 </main>
 

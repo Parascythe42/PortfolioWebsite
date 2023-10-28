@@ -1,0 +1,184 @@
+:root {
+    color-scheme: light dark;
+
+    /* CSS HEX */
+    --eerie-black: #181a1bff;
+    --platinum: #ddddddff;
+    --white-smoke: #f5f5f5ff;
+    --azul: #006ebdff;
+    --dim-gray: #797270ff;
+    --pumpkin: #fc7a1eff;
+
+    --hero-picture-height: 400px;
+}
+
+
+/* Light vs Dark */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--eerie-black);
+    }
+
+    h1 h2 h3 h4 h5 h6 p {
+        color: var(--white-smoke) !important;
+        -webkit-text-fill-color: var(--white-smoke) !important;
+    }
+
+    .linkedin {
+        filter: brightness(0) saturate(100%) invert(100%)
+    }
+}
+
+
+/* Document wide */
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/Ubuntu")
+}
+
+html {
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    background-color: var(--white-smoke);
+    margin: 0;
+    width: auto;
+}
+
+.main-containers {
+    justify-content: center;
+    border-top: 1px solid var(--white-smoke);
+}
+
+h2 {
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+a:hover {
+    filter: brightness(120%)
+}
+
+.logo {
+    min-width: 21px;
+    width: 2rem;
+}
+
+
+/* Header section */
+header {
+    width: auto;
+}
+
+nav {
+    background-color: var(--platinum);
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    /*padding: 0 4rem;*/
+    border-bottom: 0.5rem solid var(--pumpkin);
+}
+
+.header_container {
+    padding-top: 1rem;
+    display: flex;
+    list-style-type: none;
+}
+
+#nav-right {
+    justify-content: right;
+}
+
+.header_links {
+    padding: 0.4rem;
+}
+
+
+/* Main Section */
+#hero-section {
+    background-image: url(../images/Full-Moon-Behind-Mountains.jpg);
+    background-repeat: no-repeat;
+    background-position: center -6rem;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: var(--hero-picture-height);
+}
+
+#title {
+    padding-top: calc(var(--hero-picture-height) * 0.3)
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+}
+
+.main-containers {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+    height: auto;
+}
+
+.alternate-container {
+    background-color: var(--platinum);
+}
+
+/* Grids */
+.equal-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-cell {
+    padding: 1rem;
+}
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--platinum);
+}
+
+
+/* Mobile / Desktop */
+@media only screen and (max-width: 768px) {
+    body {
+        width: auto;
+    }
+
+    nav {
+        padding: 0;
+        justify-content: left;
+    }
+
+    /* Grids */
+    .equal-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hero-section {
+        background-size: cover;
+        height: calc(var(--hero-picture-height));
+        background-position: center -15rem;
+    }
+}
