@@ -100,23 +100,23 @@ header {
     text-align: center;
 }
 
-#nav-link-1 {
+.nav-link-1 {
     grid-area: navl1;
 }
 
-#nav-link-2 {
+.nav-link-2 {
     grid-area: navl2;
 }
 
-#nav-link-3 {
+.nav-link-3 {
     grid-area: navl3;
 }
 
-#nav-link-4 {
+.nav-link-4 {
     grid-area: navl4;
 }
 
-#nav-link-5 {
+.nav-link-5 {
     grid-area: navl5;
 }
 
@@ -134,15 +134,15 @@ header {
     grid-area: p;
 }
 
-#github-container {
+.github-container {
     grid-area: g;
 }
 
-#linkedin-container {
+.linkedin-container {
     grid-area: l;
 }
 
-#github-container, #linkedin-container {
+.github-container, .linkedin-container {
     display: flex;
     justify-content: right;
 }
@@ -327,6 +327,22 @@ footer {
 
     #skill-grid-mobile {
         display: grid;
+    }
+
+    #nav-container {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "navl1 navl2 navl3"
+        "navl4 navl5 navl6";
+        text-align: center;
+        background-color: var(--platinum);
+        width: auto;
+        border-bottom: 0.5rem solid var(--pumpkin);
     }
 
 
