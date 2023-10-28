@@ -3,6 +3,8 @@
 
     /* CSS HEX */
     --eerie-black: #181a1bff;
+    --eerie-black-2: #1e2021ff;
+    --onyx: #2b2f31ff;
     --platinum: #ddddddff;
     --white-smoke: #f5f5f5ff;
     --azul: #006ebdff;
@@ -16,7 +18,19 @@
 /* Light vs Dark */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: var(--eerie-black);
+        background-color: var(--eerie-black-2) !important;
+    }
+
+    #nav-container, #nav-mobile {
+        background-color: var(--onyx) !important;
+    }
+
+    .alternate-container {
+        background-color: var(--onyx) !important;
+    }
+
+    footer {
+        background-color: var(--onyx) !important
     }
 
     h1 h2 h3 h4 h5 h6 p {
@@ -45,16 +59,6 @@ body {
     margin: 0;
     width: auto;
     min-height: 100vh;
-}
-
-.main-containers {
-    justify-content: center;
-    border-top: 1px solid var(--white-smoke);
-}
-
-h2 {
-    padding-top: 1rem;
-    margin-top: 2rem;
 }
 
 a {
@@ -174,14 +178,14 @@ main {
 }
 
 .main-containers {
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-bottom: 2rem;
+    padding: 2rem 6rem 1.5rem;
     height: auto;
+    justify-content: center;
 }
 
 .alternate-container {
     background-color: var(--platinum);
+    padding-top: 1.5rem
 }
 
 /* Grids */
