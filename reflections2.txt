@@ -1,0 +1,18 @@
+What changes did you make between your desktop version and the mobile version?
+
+I changed the navigation bar and one of the section grids to use CSS Grids instead of the solutions I was using before.
+I also managed to fix the dark mode version of the site as well.
+
+
+Why did you make them?
+
+The intention of switching to CSS Grids was to make everything more modular. It didn't really work that well, I still
+had to have separate pieces of HTML for the desktop and mobile versions. I think switching to Grids made the skill
+grid easier to work with but introduced some issues that had to be circumvented in the navigation bar.
+
+
+What did you learn from this process?
+
+I Learned a lot more about CSS Grids and how to change between different versions of an HTML website depending on
+different circumstances. I had a cutoff at 700px of width and a light and dark mode implementation in this version.
+I also managed to host this website on GitHub Pages with a custom domain, https://matthew-k-fox.com/.
