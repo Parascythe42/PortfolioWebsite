@@ -105,7 +105,7 @@ class Header extends HTMLElement {
                 </div>
             </div>
         </header>
-`;
+        `;
     }
 }
 
