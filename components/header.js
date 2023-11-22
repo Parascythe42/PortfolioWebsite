@@ -16,7 +16,7 @@ class Header extends HTMLElement {
                     <div class="grid-cell nav-link-3"><a class="header_links" href="#">Projects</a></div>
                     <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
                     <div class="grid-cell nav-link-5">
-                        <a class="header_links" download href="/resume/MatthewFoxResume.pdf">Resume</a>
+                        <a class="header_links" href="/markup/resume.html">Resume</a>
                     </div>
                     <div class="padding-container"></div>
                 </div>
