@@ -1,0 +1,27 @@
+#introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:
+    "hd ph"
+    "hd ph"
+    "ma ma"
+    "ma ma";
+}
+
+#intro {
+    grid-area: hd;
+    text-align: left;
+}
+
+#b-hero {
+    grid-area: ph;
+}
+
+#intro-main {
+    grid-area: ma;
+}
+
+.main-containers {
+    padding: 2rem 8rem 1.5rem;
+}
