@@ -31,3 +31,7 @@ https://codepen.io/sosuke/pen/Pjoqqp
 
 Componentized the header and footer sections with the information and code from this link,
 https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
+
+
+About section initial text,
+https://chat.openai.com/share/3fc3207c-a5c7-4949-97d7-eb0b8efa0722

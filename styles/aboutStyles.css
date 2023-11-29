@@ -1,0 +1,43 @@
+#introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:
+    "hd ph"
+    "in ph";
+}
+
+#intro {
+    grid-area: hd;
+}
+
+#intro-text {
+    grid-area: in;
+    text-align: left;
+}
+
+#b-hero {
+    grid-area: ph;
+    margin: auto 0;
+}
+
+#intro-main {
+    grid-area: ma;
+}
+
+.main-containers {
+    padding: 2rem 18rem 1.5rem;
+}
+
+p {
+    line-height: 2;
+}
+
+#links-container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.links {
+    text-align: left;
+}
