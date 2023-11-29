@@ -181,6 +181,7 @@ main {
     padding: 2rem 18rem 1.5rem;
     height: auto;
     justify-content: center;
+    width: auto;
 }
 
 .alternate-container {

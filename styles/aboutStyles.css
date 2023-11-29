@@ -33,3 +33,12 @@
 p {
     line-height: 2;
 }
+
+#links-container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.links {
+    text-align: left;
+}
