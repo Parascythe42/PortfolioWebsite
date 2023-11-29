@@ -4,13 +4,17 @@
     grid-auto-rows: minmax(40px, auto);
     grid-template-areas:
     "hd ph"
-    "hd ph"
-    "ma ma"
-    "ma ma";
+    "in ph";
+    /*"ma ma"*/
+    /*"ma ma";*/
 }
 
 #intro {
     grid-area: hd;
+}
+
+#intro-text {
+    grid-area: in;
     text-align: left;
 }
 
@@ -24,4 +28,8 @@
 
 .main-containers {
     padding: 2rem 8rem 1.5rem;
+}
+
+p {
+    line-height: 2;
 }
