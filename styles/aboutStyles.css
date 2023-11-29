@@ -18,6 +18,7 @@
 
 #b-hero {
     grid-area: ph;
+    margin: auto 0;
 }
 
 #intro-main {
