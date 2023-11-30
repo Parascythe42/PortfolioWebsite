@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="light dark" name="color-scheme">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../styles/projectStyles.css">
+    <link href="../moon-icon.svg" rel="icon">
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+    <title>My Projects</title>
+</head>
+<body>
+
+<header-component></header-component>
+
+<main>
+    <div class="main-containers" id="opening">
+        <h2>My Projects</h2>
+        <p>These are some of the projects I have worked on or am currently working on.</p>
+    </div>
+    
+<!--     TODO Write some actual sentences about what I've been up to, or what I think I'll be doing -->
+<!--     TODO Add dates indicating the timeline, maybe above the image, inline with the opening -->
+    <div class="main-containers alternate-container project-container" id="Unraid">
+        <div class="project-opening">
+            <h2>My Unraid Server</h2>
+        </div>
+        
+        <div class="project-text">
+            <p>
+                Creating my own cloud infrastructure to take back control of my own data, for free, has been a long
+                time goal of mine. Finally realized with the created of my personal server. I chose Unraid because of
+                the convenience of built-in Virtual Machines and the integration of Docker, along with the community
+                applications that are available, and the well-designed WebUI, it was the perfect choice for my
+                applications. Especially as a learning opportunity.
+            </p>
+        </div>
+        
+        <div class="project-content">
+            <img class="project-image" src="../images/projectContent/UnraidDashboard.png"
+                 alt="An image of my Unraid Server dashboard"/>
+        </div>
+    </div>
+    
+    <div class="main-containers project-container" id="portfolio">
+        <div class="project-opening">
+            <h2>My Portfolio Website</h2>
+        </div>
+        
+        <div class="project-text">
+            <p>
+                This very website! I had a lot of fun building this, optimizing every detail, making modular components.
+                The header and footer are injected with JavaScript. I built every part of it with HTML, CSS, and
+                JavaScript, no WYSIWYG. I intend for this to be a long term project I'll keep adding to into the future.
+                I hope to later host this website on a web server running on Unraid. Feel free to send me job offers~
+                <a href="mailto:matthewfox2000@gmail.com">matthewfox2000@gmail.com</a>
+            </p>
+        </div>
+        
+        <div class="project-content">
+            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+        </div>
+    </div>
+    
+    <div class="main-containers alternate-container project-container" id="capstone">
+        <div class="project-opening">
+            <h2>My Capstone Project</h2>
+        </div>
+        
+        <div class="project-text">
+            <p>
+                I haven't actually done my Capstone yet, but I'll tell you all about it when I do.
+            </p>
+        </div>
+        
+        <div class="project-content">
+            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+        </div>
+    </div>
+    
+    <div class="main-containers project-container" id="tensorflow">
+        <div class="project-opening">
+            <h2>Using TensorFlow to Predict Stock Prices</h2>
+        </div>
+        
+        <div class="project-text">
+            <p>
+                I created a machine learning bot capable of predicting the price of Bitcoin as part of a course on
+                Udemy.
+            </p>
+        </div>
+        
+        <div class="project-content">
+            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+        </div>
+    </div>
+    
+    <div class="main-containers alternate-container project-container" id="finance">
+        <div class="project-opening">
+            <h2>Using What I Have Learned to Track My Transactions and Make a Budget</h2>
+        </div>
+        
+        <div class="project-text">
+            <p>
+                I exported my transaction data from my bank accounts as csv files, then used Python to import them,
+                with descriptions and categories, to a PostgreSQL Database. I can get data from the database with
+                Python and display it in a GUI. That way I know exactly how much I'm spending on groceries, rent, etc.
+                per unit time.
+            </p>
+        </div>
+        
+        <div class="project-content">
+            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+        </div>
+    </div>
+    
+</main>
+
+<footer-component></footer-component>
+
+</body>
+</html>
