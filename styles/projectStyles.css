@@ -27,3 +27,8 @@
     grid-area: co;
     border-left: 2px solid var(--pumpkin);
 }
+
+.project-image {
+    height: auto;
+    width: 60%;
+}
