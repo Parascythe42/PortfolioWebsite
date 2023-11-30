@@ -1,0 +1,28 @@
+:root {
+    --grid-spacing: 3rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:
+    "op co"
+    "te co";
+}
+
+.project-opening {
+    grid-area: op;
+    margin-right: var(--grid-spacing);
+}
+
+.project-text {
+    grid-area: te;
+    margin-right: var(--grid-spacing);
+}
+
+.project-content {
+    grid-area: co;
+    border-left: 2px solid var(--pumpkin);
+}
