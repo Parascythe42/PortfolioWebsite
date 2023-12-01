@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
     .resume-image {
         filter: brightness(0) saturate(100%) invert(100%);
+        width: 70vw;
     }
 }
 
@@ -13,4 +14,9 @@
 
 #resume {
     padding-top: 0;
+}
+
+.resume-image {
+    width: 50vw;
+    height: auto;
 }
