@@ -25,6 +25,7 @@
 .project-content {
     grid-area: co;
     border-left: 2px solid var(--pumpkin);
+    margin: auto 0;
 }
 
 .project-image {
