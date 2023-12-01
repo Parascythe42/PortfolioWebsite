@@ -47,15 +47,15 @@ class Header extends HTMLElement {
                             
                             <picture>
                                 <!-- Dark mode version -->
-                                <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                                 
                                 <!-- Light mode version -->
                                 <source media="(prefers-color-scheme: light)"
-                                        srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                        srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                                 
                                 <!-- Fallback image -->
                                 <img alt="The LinkedIn Bug logo" class="logo linkedin"
-                                     src="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                     src="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                             </picture>
                         </a>
                     </div>
@@ -93,15 +93,15 @@ class Header extends HTMLElement {
                         
                         <picture>
                             <!-- Dark mode version -->
-                            <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                            <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                             
                             <!-- Light mode version -->
                             <source media="(prefers-color-scheme: light)"
-                                    srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                    srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                             
                             <!-- Fallback image -->
                             <img alt="The LinkedIn Bug logo" class="logo linkedin"
-                                 src="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                 src="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                         </picture>
                     </a>
                 </div>
