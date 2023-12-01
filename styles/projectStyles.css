@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 2fr;
-    /*TODO Try a different row fraction with actual content*/
     grid-auto-rows: minmax(40px, auto);
     grid-template-areas:
     "op co"
