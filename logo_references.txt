@@ -21,6 +21,7 @@ Python
 src/images/logos/Python-Logo
 
 https://www.python.org/community/logos/
+https://www.python.org/psf/trademarks/
 
 
 Java
@@ -48,6 +49,7 @@ PostgreSQL
 src/images/logos/PostgreSQL-Logo
 
 https://www.postgresql.org/about/press/presskit16/#graphics
+https://www.postgresql.org/about/policies/trademarks/
 
 
 Pytorch
@@ -81,6 +83,8 @@ JetBrains
 src/images/logos/JetBrains-Logos
 
 https://www.jetbrains.com/company/brand/#logos-and-icons
+
+Copyright © 2000-2023 JetBrains s.r.o. JetBrains and the JetBrains logo are registered trademarks of JetBrains s.r.o.
 
 
 VS Code

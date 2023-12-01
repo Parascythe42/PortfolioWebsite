@@ -221,6 +221,58 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     grid-template-columns: repeat(4, 1fr);
 }
 
+.skill-grid-node {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(96px, auto);
+    grid-template-areas:
+    "img txt";
+}
+
+.skill-node-image {
+    grid-area: img;
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.skill-node-text {
+    grid-area: txt;
+    width: fit-content;
+    margin: 0 auto 0 1rem;
+}
+
+.skill-icon {
+    /*TensorFlow*/
+    min-height: 20px;
+
+    /*Java*/
+    /*Java Powered, Licensee, Compatible Logos*/
+    /*For horizontal version*/
+    /*min-width: 96px;*/
+    /*For vertical version*/
+    /*min-width: 57px*/
+
+    /*Docker*/
+    /*min-width: 48px;*/
+
+    /*Pytorch*/
+    /*Minimum 1/2 of the width of the logo in padding*/
+    /*min-width: 24px;*/
+
+    /*Visual Studio Code, JetBrains*/
+    /*Minimum 25% width of the logo in padding*/
+    padding-right: 1.5rem;
+
+    /*Windows*/
+    /*min-width: 15.5px;*/
+    max-width: calc(1.6180% * (100vh + 100vw));
+
+    /*JetBrains*/
+    min-width: 50px;
+
+    width: 2rem;
+}
+
 .desktop-grid-header {
     grid-area: hd;
     padding-bottom: 0.6rem;
