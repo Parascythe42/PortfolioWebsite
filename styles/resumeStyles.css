@@ -1,0 +1,16 @@
+@media (prefers-color-scheme: dark) {
+    .resume-image {
+        filter: brightness(0) saturate(100%) invert(100%)
+    }
+}
+
+.main-containers {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    height: auto;
+}
+
+#resume {
+    padding-top: 0;
+}

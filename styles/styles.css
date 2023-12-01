@@ -61,6 +61,10 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0 -4px 10px rgba(255,255,255,0.3);
+}
+
 a {
     text-decoration: none;
     color: var(--azul);
@@ -102,10 +106,11 @@ header {
 #nav-left {
     grid-area: nav1;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-    "navl1 navl2 navl3 navl4 navl5";
+    "navl1 navl2 navl3 navl4";
     text-align: center;
+    margin-right: 15rem;
 }
 
 .nav-link-1 {
@@ -124,10 +129,6 @@ header {
     grid-area: navl4;
 }
 
-.nav-link-5 {
-    grid-area: navl5;
-}
-
 
 #nav-right {
     grid-area: nav2;
@@ -136,6 +137,7 @@ header {
     grid-template-areas:
     "p p p p g l";
     align-items: center;
+    padding-right: 1.5rem;
 }
 
 .padding-container {
@@ -153,6 +155,7 @@ header {
 .github-container, .linkedin-container {
     display: flex;
     justify-content: right;
+    padding-right: 1.5rem;
 }
 
 
@@ -170,6 +173,12 @@ header {
 #title {
     padding-top: 8%;
     margin: 0;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0 -4px 10px dimgray;
+}
+
+#introduction p {
+    padding: 2rem 18rem 3rem;
+    line-height: 2;
 }
 
 main {
@@ -192,7 +201,7 @@ main {
 /* Grids */
 .equal-column-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-cell {
@@ -219,6 +228,66 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
 .skill-grid-cell-desktop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.skill-grid-node {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(96px, auto);
+    grid-template-areas:
+    "img txt";
+}
+
+.skill-node-image {
+    grid-area: img;
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.skill-node-text {
+    grid-area: txt;
+    width: fit-content;
+    margin: 0 auto 0 1rem;
+}
+
+.skill-icon {
+    /*TensorFlow*/
+    min-height: 20px;
+
+    /*Java*/
+    /*Java Powered, Licensee, Compatible Logos*/
+    /*For horizontal version*/
+    /*min-width: 96px;*/
+    /*For vertical version*/
+    /*min-width: 57px*/
+
+    /*Docker*/
+    /*min-width: 48px;*/
+
+    /*Pytorch*/
+    /*Minimum 1/2 of the width of the logo in padding*/
+    /*min-width: 24px;*/
+
+    /*Visual Studio Code, JetBrains*/
+    /*Minimum 25% width of the logo in padding*/
+    padding-right: 1.5rem;
+
+    /*Windows*/
+    /*min-width: 15.5px;*/
+    max-width: calc(1.6180% * (100vh + 100vw));
+
+    /*JetBrains*/
+    min-width: 50px;
+
+    width: 2rem;
+}
+
+.java-logo {
+    translate: 0 -1.3rem;
+}
+
+.docker-icon {
+    translate: 0 0.5rem;
 }
 
 .desktop-grid-header {
@@ -292,6 +361,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
 
 .mobile-grid-content23 {
     grid-area: m23;
+}
+
+
+.education-image {
+    height: auto;
+    width: 90%;
+}
+
+.education-image-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0;
 }
 
 

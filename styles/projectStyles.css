@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 2fr;
-    /*TODO Try a different row fraction with actual content*/
     grid-auto-rows: minmax(40px, auto);
     grid-template-areas:
     "op co"
@@ -26,9 +25,12 @@
 .project-content {
     grid-area: co;
     border-left: 2px solid var(--pumpkin);
+    margin: auto 0;
 }
 
 .project-image {
     height: auto;
     width: 60%;
+    border-radius: 1vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 }

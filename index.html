@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="light dark" name="color-scheme">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <link href="moon-icon.svg" rel="icon">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script defer src="components/header.js" type="text/javascript"></script>
+    <script defer src="components/footer.js" type="text/javascript"></script>
+    <script defer src="components/links.js" type="text/javascript"></script>
     <title>Matt's Portfolio</title>
 </head>
 <body>
@@ -23,26 +24,24 @@
 <main>
     
     <div class="main-containers" id="introduction">
-        <h2>I'm Matthew Fox</h2>
-        <p>I'm a software developer, tea drinker, and AI enthusiast. I recently graduated from NSCC and I hope to work
-           with quantum computers in the future. Feel free to check out my
-            <a href="https://github.com/Matthew-Fox-NSCC">GitHub</a>, and if you want to connect, contact me at
-<!--             TODO Make all of my email links a variable and import it in each webpage,
-                    https://www.w3schools.com/howto/howto_html_include.asp-->
-            <a href="mailto:matthewfox2000@gmail.com">matthewfox2000@gmail.com</a></p>
+        <p><strong>I'm a software developer, tea drinker, and AI enthusiast. <br>I recently graduated from NSCC and I hope to work
+           with quantum computers in the future. <br>Feel free to check out my
+            <a href="https://github.com/Matthew-Fox-NSCC">GitHub</a>, and if you want to connect. </strong><br><br><u>Contact me at
+            <email-link></email-link>.</u>
+        </p>
     </div>
     
     <div class="main-containers alternate-container" id="projects">
         <h2>Projects</h2>
         
         <div class="equal-column-grid">
-            <div class="grid-cell">This website</div>
-            <div class="grid-cell">Learning TensorFlow</div>
-            <div class="grid-cell">Personal Unraid Server</div>
+            <div class="grid-cell"><a href="markup/projects.html#portfolio">This Website</a></div>
+            <div class="grid-cell"><a href="markup/projects.html#bus-tracking">Bus Tracking Application</a></div>
+            <div class="grid-cell"><a href="markup/projects.html#Unraid">Personal Unraid Server</a></div>
             
-            <div class="grid-cell">NSCC Database Project</div>
-            <div class="grid-cell">Row 2, Column 2</div>
-            <div class="grid-cell">Row 2, Column 3</div>
+            <div class="grid-cell"><a href="markup/projects.html#tensorflow">Predicting Stock Prices</a></div>
+            <div class="grid-cell"><a href="markup/projects.html#capstone">Capstone Project</a></div>
+            <div class="grid-cell"><a href="markup/projects.html#finance">Budgeting Intelligently</a></div>
         </div>
     </div>
     
@@ -59,22 +58,155 @@
                 <div><h3>Software</h3></div>
             </div>
             <div class="desktop-grid-content1 skill-grid-cell-desktop">
-                <div><p>Python</p></div>
-                <div><p>GitHub</p></div>
-                <div><p>TensorFlow</p></div>
-                <div><p>Windows/Linux</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.python.org/">
+                            <img alt="Python Logo" class="skill-icon"
+                                 src="images/logos/Python-Logo/python-logo-only.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://github.com/Matthew-Fox-NSCC">
+                            <picture>
+                                <!-- Dark mode version -->
+                                <source class="skill-icon"
+                                        media="(prefers-color-scheme: dark)" srcset="/images/logos/github-mark/github-mark-white.svg">
+                                
+                                <!-- Light mode version -->
+                                <source class="skill-icon"
+                                        media="(prefers-color-scheme: light)" srcset="/images/logos/github-mark/github-mark.svg">
+                                
+                                <!-- Fallback image -->
+                                <img alt="The GitHub Invertocat logo" class="logo skill-icon"
+                                     src="/images/logos/github-mark/github-mark.svg">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.tensorflow.org/">
+                            <img alt="The TensorFlow Logo" class="skill-icon"
+                                 src="images/logos/TensorFlow-Logo/FullColorPrimary%20Icon.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>TensorFlow</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.microsoft.com/en-ca/windows?r=1">
+                            <img alt="The Windows Logo" class="skill-icon"
+                                 src="images/logos/Windows-Logo/WindowsLogo.png">
+                        </a>
+                        <a href="https://linuxmint.com/">
+                            <img alt="The Linux Tux Logo" class="skill-icon" src="images/logos/Linux-Logo/LinuxTux.png">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Windows/Linux</p>
+                    </div>
+                </div>
             </div>
             <div class="desktop-grid-content2 skill-grid-cell-desktop">
-                <div><p>Java</p></div>
-                <div><p>Docker</p></div>
-                <div><p>PyTorch</p></div>
-                <div><p>Intellij</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.java.com/en/">
+                            <img alt="The Java Programming language logo" class="skill-icon java-logo"
+                                 src="images/logos/Java-Logo/Java_programming_language_logo.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.docker.com/">
+                            <img alt="The Docker Logo"
+                                 class="skill-icon docker-icon"
+                                 src="images/logos/Docker-Logo/01-symbol_primary-blue-docker-logo.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Docker</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://pytorch.org/">
+                            <img alt="The Pytorch Logo" class="skill-icon"
+                                 src="images/logos/Pytorch-Logo/pytorch-icon.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>PyTorch</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.jetbrains.com/">
+                            <img alt="The JetBrains Beam Logo" class="skill-icon"
+                                 src="images/logos/JetBrains-Logos/jb_beam.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>JetBrains IDEs</p>
+                    </div>
+                </div>
             </div>
             <div class="desktop-grid-content3 skill-grid-cell-desktop">
-                <div><p>C#</p></div>
-                <div><p>PostgreSQL</p></div>
-                <div><p>Angular</p></div>
-                <div><p>VS Code</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                            <img alt="CSharp Logo" class="skill-icon" src="images/logos/CSharp-Logo/CSharpLogo.png">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>C#</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.postgresql.org/">
+                            <img alt="The PostgreSQL Logo" class="skill-icon"
+                                 src="images/logos/PostgreSQL-Logo/PostgreSQLLogo.png">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://angular.io/">
+                            <img alt="The Angular Logo" class="skill-icon" src="images/logos/Angular-Logo/angular.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://code.visualstudio.com/">
+                            <img alt="The Visual Studio Code Icon" class="skill-icon"
+                                 src="images/logos/visual-studio-code-icons/vscode.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Visual Studio Code</p>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -84,16 +216,87 @@
                 <div><h3>Technologies</h3></div>
             </div>
             <div class="mobile-grid-content11 skill-grid-cell-mobile">
-                <div><p>Python</p></div>
-                <div><p>GitHub</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.python.org/">
+                            <img alt="Python Logo" class="skill-icon"
+                                 src="images/logos/Python-Logo/python-logo-only.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://github.com/Matthew-Fox-NSCC">
+                            <picture>
+                                <!-- Dark mode version -->
+                                <source class="skill-icon"
+                                        media="(prefers-color-scheme: dark)" srcset="/images/logos/github-mark/github-mark-white.svg">
+                                
+                                <!-- Light mode version -->
+                                <source class="skill-icon"
+                                        media="(prefers-color-scheme: light)" srcset="/images/logos/github-mark/github-mark.svg">
+                                
+                                <!-- Fallback image -->
+                                <img alt="The GitHub Invertocat logo" class="logo skill-icon"
+                                     src="/images/logos/github-mark/github-mark.svg">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>GitHub</p>
+                    </div>
+                </div>
             </div>
             <div class="mobile-grid-content12 skill-grid-cell-mobile">
-                <div><p>Java</p></div>
-                <div><p>Docker</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.java.com/en/">
+                            <img alt="The Java Programming language logo" class="skill-icon java-logo"
+                                 src="images/logos/Java-Logo/Java_programming_language_logo.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.docker.com/">
+                            <img alt="The Docker Logo"
+                                 class="skill-icon docker-icon"
+                                 src="images/logos/Docker-Logo/01-symbol_primary-blue-docker-logo.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Docker</p>
+                    </div>
+                </div>
             </div>
             <div class="mobile-grid-content13 skill-grid-cell-mobile">
-                <div><p>C#</p></div>
-                <div><p>PostgreSQL</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                            <img alt="CSharp Logo" class="skill-icon" src="images/logos/CSharp-Logo/CSharpLogo.png">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>C#</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.postgresql.org/">
+                            <img alt="The PostgreSQL Logo" class="skill-icon"
+                                 src="images/logos/PostgreSQL-Logo/PostgreSQLLogo.png">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>PostgreSQL</p>
+                    </div>
+                </div>
             </div>
             
             <div class="mobile-grid-header2 skill-grid-cell-mobile">
@@ -101,16 +304,78 @@
                 <div><h3>Software</h3></div>
             </div>
             <div class="mobile-grid-content21 skill-grid-cell-mobile">
-                <div><p>TensorFlow</p></div>
-                <div><p>Windows/Linux</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.tensorflow.org/">
+                            <img alt="The TensorFlow Logo" class="skill-icon"
+                                 src="images/logos/TensorFlow-Logo/FullColorPrimary%20Icon.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>TensorFlow</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.microsoft.com/en-ca/windows?r=1">
+                            <img alt="The Windows Logo" class="skill-icon"
+                                 src="images/logos/Windows-Logo/WindowsLogo.png">
+                        </a>
+                        <a href="https://linuxmint.com/">
+                            <img alt="The Linux Tux Logo" class="skill-icon" src="images/logos/Linux-Logo/LinuxTux.png">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Windows/Linux</p>
+                    </div>
+                </div>
             </div>
             <div class="mobile-grid-content22 skill-grid-cell-mobile">
-                <div><p>PyTorch</p></div>
-                <div><p>Intellij</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://pytorch.org/">
+                            <img alt="The Pytorch Logo" class="skill-icon"
+                                 src="images/logos/Pytorch-Logo/pytorch-icon.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>PyTorch</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://www.jetbrains.com/">
+                            <img alt="The JetBrains Beam Logo" class="skill-icon"
+                                 src="images/logos/JetBrains-Logos/jb_beam.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>JetBrains IDEs</p>
+                    </div>
+                </div>
             </div>
             <div class="mobile-grid-content23 skill-grid-cell-mobile">
-                <div><p>Angular</p></div>
-                <div><p>VS Code</p></div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://angular.io/">
+                            <img alt="The Angular Logo" class="skill-icon" src="images/logos/Angular-Logo/angular.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="skill-grid-node">
+                    <div class="skill-node-image">
+                        <a href="https://code.visualstudio.com/">
+                            <img alt="The Visual Studio Code Icon" class="skill-icon"
+                                 src="images/logos/visual-studio-code-icons/vscode.svg">
+                        </a>
+                    </div>
+                    <div class="skill-node-text">
+                        <p>Visual Studio Code</p>
+                    </div>
+                </div>
             </div>
         </div>
     
@@ -120,9 +385,14 @@
         <h2>Experience</h2>
         
         <div class="equal-column-grid">
-            <div class="grid-cell">NSCC Work Term</div>
-            <div class="grid-cell">NSCC Co-Op</div>
-            <div class="grid-cell">Other Co-Op</div>
+            <div class="grid-cell education-image-container">
+                <img alt="The Nova Scotia Community College Logo" class="education-image"
+                     src="images/logos/NSCC-Logo/nscc-transparent.png">
+            </div>
+            <div class="grid-cell education-image-container">
+                <img alt="The Nova Scotia Community College Logo" class="education-image"
+                     src="images/logos/NSCC-Logo/nscc-transparent.png">
+            </div>
         </div>
     </div>
     
@@ -130,9 +400,50 @@
         <h2>Education</h2>
         
         <div class="equal-column-grid">
-            <div class="grid-cell">Classes at Dalhousie</div>
-            <div class="grid-cell">NSCC Diploma for IT Programming</div>
-            <div class="grid-cell">Other Certificate</div>
+            <div class="grid-cell education-image-container">
+                <a href="https://www.dal.ca/">
+                    <picture>
+                        <!-- Dark mode version -->
+                        <source media="(prefers-color-scheme: dark)"
+                                srcset="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_White.png">
+                        
+                        <!-- Light mode version -->
+                        <source media="(prefers-color-scheme: light)"
+                                srcset="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_Wingtip.png">
+                        
+                        <!-- Fallback image -->
+                        <img alt="The Logo of Dalhousie University" class="education-image"
+                             src="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_White.png"/>
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-cell education-image-container">
+                <a href="https://www.nscc.ca/">
+                    <img alt="The Logo of the Nova Scotia Community College Institute of Technology Campus" class="education-image"
+                         src="images/logos/NSCC-Logo/nscc-it-jpeg.jpg"/>
+                </a>
+            </div>
+            <div class="grid-cell education-image-container">
+                <a href="https://www.coursera.org/account/accomplishments/verify/697PYNTUAMU9">
+                    <img alt="A certificate I earned from IBM for an Introduction to Software Engineering"
+                         class="education-image"
+                         src="images/certificates/Introduction%20to%20Software%20Engineering%20Certificate.svg">
+                </a>
+            </div>
+            <div class="grid-cell education-image-container">
+                <a href="https://www.qubitbyqubit.org/">
+                    <img alt="A certificate I earned from IBM and Qubit by Qubit for an Introduction to Quantum Computing Course"
+                         class="education-image"
+                         src="images/certificates/Qubit%20by%20Qubit%20Completion%20Certificate.svg">
+                </a>
+            </div>
+            <div class="grid-cell education-image-container">
+                <a href="https://www.hackerrank.com/skills-verification/sql_basic">
+                    <img alt="A certificate I earned from HackerRank on basic SQL"
+                         class="education-image"
+                         src="images/certificates/SQL%20(Basic)%20Certificate%20-%20Hackerrank.svg">
+                </a>
+            </div>
         </div>
     </div>
     

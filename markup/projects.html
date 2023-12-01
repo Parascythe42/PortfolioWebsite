@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="light dark" name="color-scheme">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="../styles/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../styles/projectStyles.css">
+    <link href="../styles/projectStyles.css" rel="stylesheet">
     <link href="../moon-icon.svg" rel="icon">
-    <script src="../components/header.js" type="text/javascript" defer></script>
-    <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script defer src="../components/header.js" type="text/javascript"></script>
+    <script defer src="../components/footer.js" type="text/javascript"></script>
+    <script src="../components/links.js"></script>
     <title>My Projects</title>
 </head>
 <body>
@@ -18,12 +19,10 @@
 
 <main>
     <div class="main-containers" id="opening">
-        <h2>My Projects</h2>
+        <h1>My Projects</h1>
         <p>These are some of the projects I have worked on or am currently working on.</p>
     </div>
     
-<!--     TODO Write some actual sentences about what I've been up to, or what I think I'll be doing -->
-<!--     TODO Add dates indicating the timeline, maybe above the image, inline with the opening -->
     <div class="main-containers alternate-container project-container" id="Unraid">
         <div class="project-opening">
             <h2>My Unraid Server</h2>
@@ -32,7 +31,7 @@
         <div class="project-text">
             <p>
                 Creating my own cloud infrastructure to take back control of my own data, for free, has been a long
-                time goal of mine. Finally realized with the created of my personal server. I chose Unraid because of
+                time goal of mine. Finally, realized with the created of my personal server. I chose Unraid because of
                 the convenience of built-in Virtual Machines and the integration of Docker, along with the community
                 applications that are available, and the well-designed WebUI, it was the perfect choice for my
                 applications. Especially as a learning opportunity.
@@ -40,8 +39,8 @@
         </div>
         
         <div class="project-content">
-            <img class="project-image" src="../images/projectContent/UnraidDashboard.png"
-                 alt="An image of my Unraid Server dashboard"/>
+            <img alt="An image of my Unraid Server dashboard" class="project-image"
+                 src="../images/projectContent/UnraidDashboard.png"/>
         </div>
     </div>
     
@@ -54,14 +53,14 @@
             <p>
                 This very website! I had a lot of fun building this, optimizing every detail, making modular components.
                 The header and footer are injected with JavaScript. I built every part of it with HTML, CSS, and
-                JavaScript, no WYSIWYG. I intend for this to be a long term project I'll keep adding to into the future.
+                JavaScript, no WYSIWYG. I intend for this to be a long-term project I'll keep adding to into the future.
                 I hope to later host this website on a web server running on Unraid. Feel free to send me job offers~
-                <a href="mailto:matthewfox2000@gmail.com">matthewfox2000@gmail.com</a>
+                <email-link></email-link>
             </p>
         </div>
         
         <div class="project-content">
-            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+            <img class="project-image" src="../images/projectContent/WebsiteHomepageImage.png" alt="An image of my index page hero section"/>
         </div>
     </div>
     
@@ -77,11 +76,27 @@
         </div>
         
         <div class="project-content">
-            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+            <img alt="Placeholder" class="project-image" src="http://placehold.it/400">
         </div>
     </div>
     
-    <div class="main-containers project-container" id="tensorflow">
+    <div class="main-containers project-container" id="bus-tracking">
+        <div class="project-opening">
+            <h2>My Bus Tracking Project</h2>
+        </div>
+        
+        <div class="project-text">
+            <p>
+                I created a web application to track the buses in Halifax.
+            </p>
+        </div>
+        
+        <div class="project-content">
+            <img alt="Placeholder" class="project-image" src="http://placehold.it/400">
+        </div>
+    </div>
+    
+    <div class="main-containers alternate-container project-container" id="tensorflow">
         <div class="project-opening">
             <h2>Using TensorFlow to Predict Stock Prices</h2>
         </div>
@@ -94,11 +109,11 @@
         </div>
         
         <div class="project-content">
-            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+            <img alt="Placeholder" class="project-image" src="http://placehold.it/400">
         </div>
     </div>
     
-    <div class="main-containers alternate-container project-container" id="finance">
+    <div class="main-containers project-container" id="finance">
         <div class="project-opening">
             <h2>Using What I Have Learned to Track My Transactions and Make a Budget</h2>
         </div>
@@ -113,10 +128,10 @@
         </div>
         
         <div class="project-content">
-            <img class="project-image" src="http://placehold.it/400" alt="Placeholder">
+            <img alt="Placeholder" class="project-image" src="http://placehold.it/400">
         </div>
     </div>
-    
+
 </main>
 
 <footer-component></footer-component>

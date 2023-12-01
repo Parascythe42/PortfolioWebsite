@@ -14,14 +14,11 @@ class Header extends HTMLElement {
                     <div class="grid-cell nav-link-1"><a class="header_links" href="/index.html">Home</a></div>
                     <div class="grid-cell nav-link-2"><a class="header_links" href="/markup/about.html">About</a></div>
                     <div class="grid-cell nav-link-3"><a class="header_links" href="/markup/projects.html">Projects</a></div>
-<!--                     TODO Think about removing the feature section, depending on time left -->
-                    <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
-                    <div class="grid-cell nav-link-5"><a class="header_links" href="/markup/resume.html">Resume</a></div>
+                    <div class="grid-cell nav-link-4"><a class="header_links" href="/markup/resume.html">Resume</a></div>
                     <div class="padding-container"></div>
                 </div>
                 <div id="nav-right">
                     <div class="padding-container"></div>
-<!-- TODO Try to add some spacing between the logos and the right side of the screen -->
                     <div class="github-container">
                         <!--             GitHub Logo, https://github.com/logos -->
                         <a class="header_links" href="https://github.com/Matthew-Fox-NSCC">
@@ -29,15 +26,15 @@ class Header extends HTMLElement {
                             <picture>
                                 <!-- Dark mode version -->
                                 <source media="(prefers-color-scheme: dark)"
-                                        srcset="/images/logos/github-mark/github-mark/github-mark-white.svg">
+                                        srcset="/images/logos/github-mark/github-mark-white.svg">
                                 
                                 <!-- Light mode version -->
                                 <source media="(prefers-color-scheme: light)"
-                                        srcset="/images/logos/github-mark/github-mark/github-mark.svg">
+                                        srcset="/images/logos/github-mark/github-mark.svg">
                                 
                                 <!-- Fallback image -->
                                 <img alt="The GitHub Invertocat logo" class="logo"
-                                     src="/images/logos/github-mark/github-mark/github-mark.svg">
+                                     src="/images/logos/github-mark/github-mark.svg">
                             </picture>
                         
                         </a>
@@ -48,15 +45,15 @@ class Header extends HTMLElement {
                             
                             <picture>
                                 <!-- Dark mode version -->
-                                <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                                 
                                 <!-- Light mode version -->
                                 <source media="(prefers-color-scheme: light)"
-                                        srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                        srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                                 
                                 <!-- Fallback image -->
                                 <img alt="The LinkedIn Bug logo" class="logo linkedin"
-                                     src="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                     src="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                             </picture>
                         </a>
                     </div>
@@ -67,8 +64,7 @@ class Header extends HTMLElement {
                 <div class="grid-cell nav-link-1"><a class="header_links" href="/index.html">Home</a></div>
                 <div class="grid-cell nav-link-2"><a class="header_links" href="#">About</a></div>
                 <div class="grid-cell nav-link-3"><a class="header_links" href="#">Projects</a></div>
-                <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
-                <div class="grid-cell nav-link-5"><a class="header_links" href="#">Resume</a></div>
+                <div class="grid-cell nav-link-4"><a class="header_links" href="#">Resume</a></div>
                 
                 <div id="nav-logo">
                     <!--             GitHub Logo, https://github.com/logos -->
@@ -77,15 +73,15 @@ class Header extends HTMLElement {
                         <picture>
                             <!-- Dark mode version -->
                             <source media="(prefers-color-scheme: dark)"
-                                    srcset="/images/logos/github-mark/github-mark/github-mark-white.svg">
+                                    srcset="/images/logos/github-mark/github-mark-white.svg">
                             
                             <!-- Light mode version -->
                             <source media="(prefers-color-scheme: light)"
-                                    srcset="/images/logos/github-mark/github-mark/github-mark.svg">
+                                    srcset="/images/logos/github-mark/github-mark.svg">
                             
                             <!-- Fallback image -->
                             <img alt="The GitHub Invertocat logo" class="logo"
-                                 src="/images/logos/github-mark/github-mark/github-mark.svg">
+                                 src="/images/logos/github-mark/github-mark.svg">
                         </picture>
                     </a>
                     
@@ -94,15 +90,15 @@ class Header extends HTMLElement {
                         
                         <picture>
                             <!-- Dark mode version -->
-                            <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                            <source media="(prefers-color-scheme: dark)" srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                             
                             <!-- Light mode version -->
                             <source media="(prefers-color-scheme: light)"
-                                    srcset="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                    srcset="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                             
                             <!-- Fallback image -->
                             <img alt="The LinkedIn Bug logo" class="logo linkedin"
-                                 src="/images/logos/LinkedIn-Logos/LI-In-Bug.png">
+                                 src="/images/logos/LinkedIn-Logos/LinkedInBug.png">
                         </picture>
                     </a>
                 </div>
