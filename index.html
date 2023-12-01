@@ -53,8 +53,6 @@
         <!-- Inspired by Mozilla developer.
             https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas -->
         <div class="grid-wrapper" id="skill-grid-desktop">
-<!--             TODO Switch the GitHub icon to white on dark mode -->
-<!--             TODO Link each icon to the origin website home page -->
             <div class="desktop-grid-header skill-grid-cell-desktop">
                 <div><h3>Languages</h3></div>
                 <div><h3>Technologies</h3></div>
@@ -64,7 +62,9 @@
             <div class="desktop-grid-content1 skill-grid-cell-desktop">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Python-Logo/python-logo-only.svg" alt="Python Logo">
+                        <a href="https://www.python.org/">
+                            <img class="skill-icon" src="images/logos/Python-Logo/python-logo-only.svg" alt="Python Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Python</p>
@@ -72,7 +72,19 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/github-mark/github-mark.svg" alt="GitHub Logo">
+                        <a href="https://github.com/Matthew-Fox-NSCC">
+                            <picture>
+                                <!-- Dark mode version -->
+                                <source media="(prefers-color-scheme: dark)" srcset="/images/logos/github-mark/github-mark-white.svg" class="skill-icon">
+                            
+                                <!-- Light mode version -->
+                                <source media="(prefers-color-scheme: light)" srcset="/images/logos/github-mark/github-mark.svg" class="skill-icon">
+                            
+                                <!-- Fallback image -->
+                                <img alt="The GitHub Invertocat logo" class="logo skill-icon"
+                                     src="/images/logos/github-mark/github-mark.svg">
+                            </picture>
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>GitHub</p>
@@ -80,7 +92,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/TensorFlow-Logo/FullColorPrimary%20Icon.svg" alt="The TensorFlow Logo">
+                        <a href="https://www.tensorflow.org/">
+                            <img class="skill-icon" src="images/logos/TensorFlow-Logo/FullColorPrimary%20Icon.svg" alt="The TensorFlow Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>TensorFlow</p>
@@ -88,8 +102,12 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Windows-Logo/WindowsLogo.png" alt="The Windows Logo">
-                        <img class="skill-icon" src="images/logos/Linux-Logo/LinuxTux.png" alt="The Linux Tux Logo">
+                        <a href="https://www.microsoft.com/en-ca/windows?r=1">
+                            <img class="skill-icon" src="images/logos/Windows-Logo/WindowsLogo.png" alt="The Windows Logo">
+                        </a>
+                        <a href="https://linuxmint.com/">
+                            <img class="skill-icon" src="images/logos/Linux-Logo/LinuxTux.png" alt="The Linux Tux Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Windows/Linux</p>
@@ -99,7 +117,9 @@
             <div class="desktop-grid-content2 skill-grid-cell-desktop">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Java-Logo/Java_programming_language_logo.svg" alt="The Java Programming language logo">
+                        <a href="https://www.java.com/en/">
+                            <img class="skill-icon" src="images/logos/Java-Logo/Java_programming_language_logo.svg" alt="The Java Programming language logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Java</p>
@@ -107,7 +127,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Docker-Logo/01-symbol_primary-blue-docker-logo.svg" alt="The Docker Logo">
+                        <a href="https://www.docker.com/">
+                            <img class="skill-icon" src="images/logos/Docker-Logo/01-symbol_primary-blue-docker-logo.svg" alt="The Docker Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Docker</p>
@@ -115,7 +137,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Pytorch-Logo/pytorch-icon.svg" alt="The Pytorch Logo">
+                        <a href="https://pytorch.org/">
+                            <img class="skill-icon" src="images/logos/Pytorch-Logo/pytorch-icon.svg" alt="The Pytorch Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>PyTorch</p>
@@ -123,7 +147,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/JetBrains-Logos/jb_beam.svg" alt="The JetBrains Beam Logo">
+                        <a href="https://www.jetbrains.com/">
+                            <img class="skill-icon" src="images/logos/JetBrains-Logos/jb_beam.svg" alt="The JetBrains Beam Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>JetBrains IDEs</p>
@@ -133,7 +159,9 @@
             <div class="desktop-grid-content3 skill-grid-cell-desktop">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/CSharp-Logo/CSharpLogo.png" alt="CSharp Logo">
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                            <img class="skill-icon" src="images/logos/CSharp-Logo/CSharpLogo.png" alt="CSharp Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>C#</p>
@@ -141,7 +169,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/PostgreSQL-Logo/PostgreSQLLogo.png" alt="The PostgreSQL Logo">
+                        <a href="https://www.postgresql.org/">
+                            <img class="skill-icon" src="images/logos/PostgreSQL-Logo/PostgreSQLLogo.png" alt="The PostgreSQL Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>PostgreSQL</p>
@@ -149,7 +179,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Angular-Logo/angular.svg" alt="The Angular Logo">
+                        <a href="https://angular.io/">
+                            <img class="skill-icon" src="images/logos/Angular-Logo/angular.svg" alt="The Angular Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Angular</p>
@@ -157,7 +189,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/visual-studio-code-icons/vscode.svg" alt="The Visual Studio Code Icon">
+                        <a href="https://code.visualstudio.com/">
+                            <img class="skill-icon" src="images/logos/visual-studio-code-icons/vscode.svg" alt="The Visual Studio Code Icon">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Visual Studio Code</p>
@@ -174,7 +208,9 @@
             <div class="mobile-grid-content11 skill-grid-cell-mobile">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Python-Logo/python-logo-only.svg" alt="Python Logo">
+                        <a href="https://www.python.org/">
+                            <img class="skill-icon" src="images/logos/Python-Logo/python-logo-only.svg" alt="Python Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Python</p>
@@ -182,7 +218,19 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/github-mark/github-mark.svg" alt="GitHub Logo">
+                        <a href="https://github.com/Matthew-Fox-NSCC">
+                            <picture>
+                                <!-- Dark mode version -->
+                                <source media="(prefers-color-scheme: dark)" srcset="/images/logos/github-mark/github-mark-white.svg" class="skill-icon">
+                            
+                                <!-- Light mode version -->
+                                <source media="(prefers-color-scheme: light)" srcset="/images/logos/github-mark/github-mark.svg" class="skill-icon">
+                            
+                                <!-- Fallback image -->
+                                <img alt="The GitHub Invertocat logo" class="logo skill-icon"
+                                     src="/images/logos/github-mark/github-mark.svg">
+                            </picture>
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>GitHub</p>
@@ -192,7 +240,9 @@
             <div class="mobile-grid-content12 skill-grid-cell-mobile">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Java-Logo/Java_programming_language_logo.svg" alt="The Java Programming language logo">
+                        <a href="https://www.java.com/en/">
+                            <img class="skill-icon" src="images/logos/Java-Logo/Java_programming_language_logo.svg" alt="The Java Programming language logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Java</p>
@@ -200,7 +250,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Docker-Logo/01-symbol_primary-blue-docker-logo.svg" alt="The Docker Logo">
+                        <a href="https://www.docker.com/">
+                            <img class="skill-icon" src="images/logos/Docker-Logo/01-symbol_primary-blue-docker-logo.svg" alt="The Docker Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Docker</p>
@@ -210,7 +262,9 @@
             <div class="mobile-grid-content13 skill-grid-cell-mobile">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/CSharp-Logo/CSharpLogo.png" alt="CSharp Logo">
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                            <img class="skill-icon" src="images/logos/CSharp-Logo/CSharpLogo.png" alt="CSharp Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>C#</p>
@@ -218,7 +272,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/PostgreSQL-Logo/PostgreSQLLogo.png" alt="The PostgreSQL Logo">
+                        <a href="https://www.postgresql.org/">
+                            <img class="skill-icon" src="images/logos/PostgreSQL-Logo/PostgreSQLLogo.png" alt="The PostgreSQL Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>PostgreSQL</p>
@@ -233,7 +289,9 @@
             <div class="mobile-grid-content21 skill-grid-cell-mobile">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/TensorFlow-Logo/FullColorPrimary%20Icon.svg" alt="The TensorFlow Logo">
+                        <a href="https://www.tensorflow.org/">
+                            <img class="skill-icon" src="images/logos/TensorFlow-Logo/FullColorPrimary%20Icon.svg" alt="The TensorFlow Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>TensorFlow</p>
@@ -241,8 +299,12 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Windows-Logo/WindowsLogo.png" alt="The Windows Logo">
-                        <img class="skill-icon" src="images/logos/Linux-Logo/LinuxTux.png" alt="The Linux Tux Logo">
+                        <a href="https://www.microsoft.com/en-ca/windows?r=1">
+                            <img class="skill-icon" src="images/logos/Windows-Logo/WindowsLogo.png" alt="The Windows Logo">
+                        </a>
+                        <a href="https://linuxmint.com/">
+                            <img class="skill-icon" src="images/logos/Linux-Logo/LinuxTux.png" alt="The Linux Tux Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Windows/Linux</p>
@@ -252,7 +314,9 @@
             <div class="mobile-grid-content22 skill-grid-cell-mobile">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Pytorch-Logo/pytorch-icon.svg" alt="The Pytorch Logo">
+                        <a href="https://pytorch.org/">
+                            <img class="skill-icon" src="images/logos/Pytorch-Logo/pytorch-icon.svg" alt="The Pytorch Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>PyTorch</p>
@@ -260,7 +324,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/JetBrains-Logos/jb_beam.svg" alt="The JetBrains Beam Logo">
+                        <a href="https://www.jetbrains.com/">
+                            <img class="skill-icon" src="images/logos/JetBrains-Logos/jb_beam.svg" alt="The JetBrains Beam Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>JetBrains IDEs</p>
@@ -270,7 +336,9 @@
             <div class="mobile-grid-content23 skill-grid-cell-mobile">
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/Angular-Logo/angular.svg" alt="The Angular Logo">
+                        <a href="https://angular.io/">
+                            <img class="skill-icon" src="images/logos/Angular-Logo/angular.svg" alt="The Angular Logo">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Angular</p>
@@ -278,7 +346,9 @@
                 </div>
                 <div class="skill-grid-node">
                     <div class="skill-node-image">
-                        <img class="skill-icon" src="images/logos/visual-studio-code-icons/vscode.svg" alt="The Visual Studio Code Icon">
+                        <a href="https://code.visualstudio.com/">
+                            <img class="skill-icon" src="images/logos/visual-studio-code-icons/vscode.svg" alt="The Visual Studio Code Icon">
+                        </a>
                     </div>
                     <div class="skill-node-text">
                         <p>Visual Studio Code</p>
@@ -294,9 +364,8 @@
         
         <div class="equal-column-grid">
 <!--             TODO Add placeholder images of my experience -->
-            <div class="grid-cell">NSCC Work Term</div>
             <div class="grid-cell">NSCC Co-Op</div>
-            <div class="grid-cell">Other Co-Op</div>
+            <div class="grid-cell">NSCC Work Term</div>
         </div>
     </div>
     
