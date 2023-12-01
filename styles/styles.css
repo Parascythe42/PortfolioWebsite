@@ -136,6 +136,7 @@ header {
     grid-template-areas:
     "p p p p g l";
     align-items: center;
+    padding-right: 1.5rem;
 }
 
 .padding-container {
@@ -153,6 +154,7 @@ header {
 .github-container, .linkedin-container {
     display: flex;
     justify-content: right;
+    padding-right: 1.5rem;
 }
 
 
