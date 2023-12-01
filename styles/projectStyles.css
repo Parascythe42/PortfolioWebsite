@@ -31,4 +31,6 @@
 .project-image {
     height: auto;
     width: 60%;
+    border-radius: 1vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 }

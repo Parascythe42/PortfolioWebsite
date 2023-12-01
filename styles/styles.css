@@ -61,6 +61,10 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0 -4px 10px rgba(255,255,255,0.3);
+}
+
 a {
     text-decoration: none;
     color: var(--azul);
@@ -169,6 +173,12 @@ header {
 #title {
     padding-top: 8%;
     margin: 0;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0 -4px 10px dimgray;
+}
+
+#introduction p {
+    padding: 2rem 18rem 3rem;
+    line-height: 2;
 }
 
 main {
@@ -270,6 +280,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
     min-width: 50px;
 
     width: 2rem;
+}
+
+.java-logo {
+    translate: 0 -1.3rem;
+}
+
+.docker-icon {
+    translate: 0 0.5rem;
 }
 
 .desktop-grid-header {
