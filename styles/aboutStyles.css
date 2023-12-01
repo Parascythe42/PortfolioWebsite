@@ -30,10 +30,6 @@
     grid-area: ma;
 }
 
-.main-containers {
-    padding: 2rem 18rem 1.5rem;
-}
-
 p {
     line-height: 2;
 }
@@ -45,4 +41,21 @@ p {
 
 .links {
     text-align: left;
+}
+
+/* Mobile / Desktop */
+@media only screen and (max-width: 700px) {
+    #about-introduction {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(40px, auto);
+        grid-template-areas:
+        "hd"
+        "ph"
+        "in";
+    }
+
+    #maloof-photo {
+        width: 20rem;
+    }
 }
