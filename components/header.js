@@ -14,9 +14,7 @@ class Header extends HTMLElement {
                     <div class="grid-cell nav-link-1"><a class="header_links" href="/index.html">Home</a></div>
                     <div class="grid-cell nav-link-2"><a class="header_links" href="/markup/about.html">About</a></div>
                     <div class="grid-cell nav-link-3"><a class="header_links" href="/markup/projects.html">Projects</a></div>
-<!--                     TODO Think about removing the feature section, depending on time left -->
-                    <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
-                    <div class="grid-cell nav-link-5"><a class="header_links" href="/markup/resume.html">Resume</a></div>
+                    <div class="grid-cell nav-link-4"><a class="header_links" href="/markup/resume.html">Resume</a></div>
                     <div class="padding-container"></div>
                 </div>
                 <div id="nav-right">
@@ -66,8 +64,7 @@ class Header extends HTMLElement {
                 <div class="grid-cell nav-link-1"><a class="header_links" href="/index.html">Home</a></div>
                 <div class="grid-cell nav-link-2"><a class="header_links" href="#">About</a></div>
                 <div class="grid-cell nav-link-3"><a class="header_links" href="#">Projects</a></div>
-                <div class="grid-cell nav-link-4"><a class="header_links" href="#">Feature</a></div>
-                <div class="grid-cell nav-link-5"><a class="header_links" href="#">Resume</a></div>
+                <div class="grid-cell nav-link-4"><a class="header_links" href="#">Resume</a></div>
                 
                 <div id="nav-logo">
                     <!--             GitHub Logo, https://github.com/logos -->

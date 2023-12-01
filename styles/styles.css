@@ -102,10 +102,11 @@ header {
 #nav-left {
     grid-area: nav1;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-    "navl1 navl2 navl3 navl4 navl5";
+    "navl1 navl2 navl3 navl4";
     text-align: center;
+    margin-right: 15rem;
 }
 
 .nav-link-1 {
@@ -122,10 +123,6 @@ header {
 
 .nav-link-4 {
     grid-area: navl4;
-}
-
-.nav-link-5 {
-    grid-area: navl5;
 }
 
 
