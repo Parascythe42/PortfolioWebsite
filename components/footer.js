@@ -5,6 +5,7 @@ class Footer extends HTMLElement {
     constructor() {
         super();
     }
+
     // TODO Maybe try adding some contact information, so it's always there
     connectedCallback() {
         this.innerHTML = `

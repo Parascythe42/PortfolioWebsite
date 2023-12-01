@@ -5,12 +5,12 @@ class Email extends HTMLElement {
     constructor() {
         super();
     }
+
     connectedCallback() {
         this.innerHTML = `
         <a href="mailto:matthewfox2000@gmail.com">matthewfox2000@gmail.com</a>
         `;
     }
 }
-
 
 customElements.define('email-link', Email)
