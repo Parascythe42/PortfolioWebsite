@@ -349,6 +349,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
 }
 
 
+.education-image {
+    height: 18rem;
+    width: auto;
+}
+
+
 /* Footer Section */
 footer {
     text-align: center;

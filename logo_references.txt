@@ -91,3 +91,10 @@ VS Code
 src/images/logos/visual-studio-code-icons
 
 https://code.visualstudio.com/brand
+
+
+Nova Scotia Community College
+src/images/logos/NSCC-Logo
+
+https://www.nscc.ca/about/publications/visual-identity-guidelines/
+https://www.nscc.ca/docs/about-nscc/visual-identity-guidelines/guidelines.pdf

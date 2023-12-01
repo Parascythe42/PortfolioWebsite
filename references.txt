@@ -24,3 +24,7 @@ https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header
 
 About section initial text,
 https://chat.openai.com/share/3fc3207c-a5c7-4949-97d7-eb0b8efa0722
+
+
+Converting PDFs to SVGs for embedding
+https://cloudconvert.com/pdf-to-svg
