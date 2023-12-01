@@ -373,27 +373,36 @@
         <h2>Education</h2>
         
         <div class="equal-column-grid">
-            <div class="grid-cell">
+            <div class="grid-cell education-image-container">
                 <a href="https://www.dal.ca/">
-                    <img class="education-image" src="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_White.png" alt="The Logo of Dalhousie University"/>
+                    <picture>
+                        <!-- Dark mode version -->
+                        <source media="(prefers-color-scheme: dark)" srcset="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_White.png">
+                        
+                        <!-- Light mode version -->
+                        <source media="(prefers-color-scheme: light)" srcset="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_Wingtip.png">
+                        
+                        <!-- Fallback image -->
+                        <img class="education-image" src="images/logos/Dalhousie-Logos/DAL_LogoVert_RGB_Gold_White.png" alt="The Logo of Dalhousie University"/>
+                    </picture>
                 </a>
             </div>
-            <div class="grid-cell">
+            <div class="grid-cell education-image-container">
                 <a href="https://www.nscc.ca/">
                     <img class="education-image" src="images/logos/NSCC-Logo/nscc-it-jpeg.jpg" alt="The Logo of the Nova Scotia Community College"/>
                 </a>
             </div>
-            <div class="grid-cell">
+            <div class="grid-cell education-image-container">
                 <a href="https://www.coursera.org/account/accomplishments/verify/697PYNTUAMU9">
                     <img class="education-image" src="images/certificates/Introduction%20to%20Software%20Engineering%20Certificate.svg" alt="A certificate I earned from IBM for an Introduction to Software Engineering">
                 </a>
             </div>
-            <div class="grid-cell">
+            <div class="grid-cell education-image-container">
                 <a href="https://www.qubitbyqubit.org/">
                     <img class="education-image" src="images/certificates/Qubit%20by%20Qubit%20Completion%20Certificate.svg" alt="A certificate I earned from IBM and Qubit by Qubit for an Introduction to Quantum Computing Course">
                 </a>
             </div>
-            <div class="grid-cell">
+            <div class="grid-cell education-image-container">
                 <a href="https://www.hackerrank.com/skills-verification/sql_basic">
                     <img class="education-image" src="images/certificates/SQL%20(Basic)%20Certificate%20-%20Hackerrank.svg" alt="A certificate I earned from HackerRank on basic SQL">
                 </a>

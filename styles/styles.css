@@ -350,8 +350,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_a
 
 
 .education-image {
-    height: 18rem;
-    width: auto;
+    height: auto;
+    width: 90%;
+}
+
+.education-image-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0;
 }
 
 
