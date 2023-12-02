@@ -39,7 +39,7 @@
     }
 
     .linkedin {
-        filter: brightness(0) saturate(100%) invert(100%)
+        filter: brightness(0) saturate(100%) invert(100%);
     }
 }
 
@@ -177,7 +177,7 @@ header {
 }
 
 #introduction p {
-    padding: 2rem 18rem 3rem;
+    padding: inherit inherit 3rem;
     line-height: 2;
 }
 
@@ -187,7 +187,7 @@ main {
 }
 
 .main-containers {
-    padding: 2rem 18rem 1.5rem;
+    padding: 2rem 18vw 1.5rem;
     height: auto;
     justify-content: center;
     width: auto;

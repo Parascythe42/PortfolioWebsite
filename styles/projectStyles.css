@@ -4,12 +4,12 @@
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2px 1fr;
     grid-template-rows: 1fr 2fr;
     grid-auto-rows: minmax(40px, auto);
     grid-template-areas:
-    "op co"
-    "te co";
+    "op li co"
+    "te li co";
 }
 
 .project-opening {
@@ -22,9 +22,14 @@
     margin-right: var(--grid-spacing);
 }
 
+.project-line {
+    grid-area: li;
+    background-color: var(--pumpkin);
+    width: 2px;
+}
+
 .project-content {
     grid-area: co;
-    border-left: 2px solid var(--pumpkin);
     margin: auto 0;
 }
 
@@ -33,4 +38,16 @@
     width: 60%;
     border-radius: 1vh;
     box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
+}
+
+/* Mobile / Desktop */
+@media only screen and (max-width: 700px) {
+    .project-image {
+        height: auto;
+        width: 90%;
+    }
+
+    .project-container {
+        grid-template-rows: 1fr 4fr;
+    }
 }
