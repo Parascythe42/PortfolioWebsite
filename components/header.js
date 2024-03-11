@@ -62,9 +62,9 @@ class Header extends HTMLElement {
             
             <div id="nav-mobile">
                 <div class="grid-cell nav-link-1"><a class="header_links" href="/index.html">Home</a></div>
-                <div class="grid-cell nav-link-2"><a class="header_links" href="#">About</a></div>
-                <div class="grid-cell nav-link-3"><a class="header_links" href="#">Projects</a></div>
-                <div class="grid-cell nav-link-4"><a class="header_links" href="#">Resume</a></div>
+                <div class="grid-cell nav-link-2"><a class="header_links" href="/markup/about.html">About</a></div>
+                <div class="grid-cell nav-link-3"><a class="header_links" href="/markup/projects.html">Projects</a></div>
+                <div class="grid-cell nav-link-4"><a class="header_links" href="/markup/resume.html">Resume</a></div>
                 
                 <div id="nav-logo">
                     <!--             GitHub Logo, https://github.com/logos -->
