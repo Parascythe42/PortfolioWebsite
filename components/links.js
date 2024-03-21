@@ -13,4 +13,4 @@ class Email extends HTMLElement {
     }
 }
 
-customElements.define('email-link', Email)
+customElements.define('email-link', Email);
