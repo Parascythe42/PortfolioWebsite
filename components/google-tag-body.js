@@ -16,4 +16,4 @@ class GoogleTagBody extends HTMLElement {
     }
 }
 
-customElements.define('google-tag-connection', GoogleTagBody);
+customElements.define('google-tag-body-connection', GoogleTagBody);
