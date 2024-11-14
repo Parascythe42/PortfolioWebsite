@@ -8,7 +8,7 @@ class Email extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <a href="mailto:matthewfox2000@gmail.com">matthewfox2000@gmail.com</a>
+        <a href="mailto:me@matthew-k-fox.com">me@matthew-k-fox.com</a>
         `;
     }
 }
